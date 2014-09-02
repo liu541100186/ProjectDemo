@@ -19,6 +19,7 @@
 		F0BFBD0419ADAD97005BE534 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0BFBCEC19ADAD97005BE534 /* UIKit.framework */; };
 		F0BFBD0C19ADAD97005BE534 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F0BFBD0A19ADAD97005BE534 /* InfoPlist.strings */; };
 		F0BFBD0E19ADAD97005BE534 /* ProjectDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F0BFBD0D19ADAD97005BE534 /* ProjectDemoTests.m */; };
+		F0BFBD2319ADB0C7005BE534 /* UIView+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = F0BFBD2219ADB0C7005BE534 /* UIView+Addition.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,11 @@
 		F0BFBD0919ADAD97005BE534 /* ProjectDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ProjectDemoTests-Info.plist"; sourceTree = "<group>"; };
 		F0BFBD0B19ADAD97005BE534 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F0BFBD0D19ADAD97005BE534 /* ProjectDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProjectDemoTests.m; sourceTree = "<group>"; };
+		F0BFBD2119ADB0C7005BE534 /* UIView+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Addition.h"; sourceTree = "<group>"; };
+		F0BFBD2219ADB0C7005BE534 /* UIView+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Addition.m"; sourceTree = "<group>"; };
+		F0BFBD2619ADB181005BE534 /* AppMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppMacro.h; sourceTree = "<group>"; };
+		F0BFBD2719ADB19B005BE534 /* UtilsMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UtilsMacro.h; sourceTree = "<group>"; };
+		F0BFBD2919ADB2A1005BE534 /* VendorMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VendorMacro.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +115,13 @@
 			children = (
 				F0BFBCF719ADAD97005BE534 /* CBAppDelegate.h */,
 				F0BFBCF819ADAD97005BE534 /* CBAppDelegate.m */,
+				F0BFBD1D19ADAF07005BE534 /* General */,
+				F0BFBD1B19ADAEB6005BE534 /* Sections */,
+				F0BFBD1A19ADAE8C005BE534 /* Vendors */,
+				F0BFBD1919ADAE7D005BE534 /* Helpers */,
+				F0BFBD1819ADADDC005BE534 /* Macro */,
+				F0BFBD1719ADADCA005BE534 /* Models */,
+				F0BFBD1C19ADAEC2005BE534 /* Resources */,
 				F0BFBCFA19ADAD97005BE534 /* Images.xcassets */,
 				F0BFBCEF19ADAD97005BE534 /* Supporting Files */,
 			);
@@ -142,6 +155,84 @@
 				F0BFBD0A19ADAD97005BE534 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F0BFBD1719ADADCA005BE534 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F0BFBD1819ADADDC005BE534 /* Macro */ = {
+			isa = PBXGroup;
+			children = (
+				F0BFBD2619ADB181005BE534 /* AppMacro.h */,
+				F0BFBD2719ADB19B005BE534 /* UtilsMacro.h */,
+				F0BFBD2919ADB2A1005BE534 /* VendorMacro.h */,
+			);
+			path = Macro;
+			sourceTree = "<group>";
+		};
+		F0BFBD1919ADAE7D005BE534 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		F0BFBD1A19ADAE8C005BE534 /* Vendors */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Vendors;
+			sourceTree = "<group>";
+		};
+		F0BFBD1B19ADAEB6005BE534 /* Sections */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Sections;
+			sourceTree = "<group>";
+		};
+		F0BFBD1C19ADAEC2005BE534 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F0BFBD1D19ADAF07005BE534 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				F0BFBD1E19ADAF07005BE534 /* Categories */,
+				F0BFBD1F19ADAF07005BE534 /* Classes */,
+				F0BFBD2019ADAF07005BE534 /* Views */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+		F0BFBD1E19ADAF07005BE534 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				F0BFBD2119ADB0C7005BE534 /* UIView+Addition.h */,
+				F0BFBD2219ADB0C7005BE534 /* UIView+Addition.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		F0BFBD1F19ADAF07005BE534 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		F0BFBD2019ADAF07005BE534 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -242,6 +333,7 @@
 			files = (
 				F0BFBCF519ADAD97005BE534 /* main.m in Sources */,
 				F0BFBCF919ADAD97005BE534 /* CBAppDelegate.m in Sources */,
+				F0BFBD2319ADB0C7005BE534 /* UIView+Addition.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,6 +534,7 @@
 				F0BFBD1319ADAD97005BE534 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F0BFBD1419ADAD97005BE534 /* Build configuration list for PBXNativeTarget "ProjectDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -450,6 +543,7 @@
 				F0BFBD1619ADAD97005BE534 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

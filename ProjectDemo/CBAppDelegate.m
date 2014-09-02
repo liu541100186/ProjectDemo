@@ -7,7 +7,6 @@
 //
 
 #import "CBAppDelegate.h"
-
 @implementation CBAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
